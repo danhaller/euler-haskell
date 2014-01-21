@@ -1,0 +1,1 @@
+problem4 = maximum $ [x | y <- [100..999], z <- [100..999], let x=y*z, show x == reverse (show x)]
