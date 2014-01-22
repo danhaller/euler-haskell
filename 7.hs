@@ -6,5 +6,5 @@ primeFactors n = factor n primes
         | p*p > n        = [n]
         | n `mod` p == 0 = p : factor (n `div` p) (p:ps)
         | otherwise      = factor n ps
- 
-problem3 = last (primeFactors 600851475143)
+
+problem7 =  primes !! 10000
